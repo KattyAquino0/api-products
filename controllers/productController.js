@@ -20,7 +20,7 @@ async function list(req, res, next) {
     }
     const prods = await productService.listProducts({
       page: parseInt(page) || 1,
-      limit: parseInt(limit) || 60,
+      limit: parseInt(limit) || 300,
       filtro
     });
     res.json(prods);
